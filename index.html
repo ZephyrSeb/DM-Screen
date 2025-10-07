@@ -1,0 +1,107 @@
+<head>
+    <title>DM Screen D&D 2024</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body onclick="CancelClick()">
+    <table class="red_table"><tr><td><h1>Actions</h1></td></tr>
+    <tr><td><div class="white_table" id="action_table">
+        <table><tr><td>
+            <div onclick="OnClick('attack')"><table><tr><td rowspan="2"><div class="red_table"><img src="assets/crossed-swords.png" width="40px"></div></td><td class="cell-bold">Attack</td></tr><tr><td class="cell-italic">Attack with a weapon</td></tr></table></div>
+            <div onclick="OnClick('dash')"><table><tr><td rowspan="2"><div class="red_table"><img src="assets/sprint.png" width="40px"></div></td><td class="cell-bold">Dash</td></tr><tr><td class="cell-italic">Increase movement speed</td></tr></table></div>
+            <div onclick="OnClick('disengage')"><table><tr><td rowspan="2"><div class="red_table"><img src="assets/slalom.png" width="40px"></div></td><td class="cell-bold">Disengage</td></tr><tr><td class="cell-italic">Prevent opportunity attacks</td></tr></table></div>
+            <div onclick="OnClick('dodge')"><table><tr><td rowspan="2"><div class="red_table"><img src="assets/dodging.png" width="40px"></div></td><td class="cell-bold">Dodge</td></tr><tr><td class="cell-italic">Increase defenses</td></tr></table></div>
+            <div onclick="OnClick('help')"><table><tr><td rowspan="2"><div class="red_table"><img src="assets/shaking-hands.png" width="40px"></div></td><td class="cell-bold">Help</td></tr><tr><td class="cell-italic">Grant an ally advantage</td></tr></table></div>
+            <div onclick="OnClick('hide')"><table><tr><td rowspan="2"><div class="red_table"><img src="assets/hood.png" width="40px"></div></td><td class="cell-bold">Hide</td></tr><tr><td class="cell-italic">Conceal yourself from enemies</td></tr></table></div>
+            <div onclick="OnClick('influence')"><table><tr><td rowspan="2"><div class="red_table"><img src="assets/talk.png" width="40px"></div></td><td class="cell-bold">Influence</td></tr><tr><td class="cell-italic">Urge a creature to do something</td></tr></table></div>
+            <div onclick="OnClick('magic')"><table><tr><td rowspan="2"><div class="red_table"><img src="assets/wizard-staff.png" width="40px"></div></td><td class="cell-bold">Magic</td></tr><tr><td class="cell-italic">Cast a spell or use a magic item</td></tr></table></div>
+            <div onclick="OnClick('ready')"><table><tr><td rowspan="2"><div class="red_table"><img src="assets/clockwork.png" width="40px"></div></td><td class="cell-bold">Ready</td></tr><tr><td class="cell-italic">Prepare an action on a trigger</td></tr></table></div>
+            <div onclick="OnClick('search')"><table><tr><td rowspan="2"><div class="red_table"><img src="assets/magnifying-glass.png" width="40px"></div></td><td class="cell-bold">Search</td></tr><tr><td class="cell-italic">Discern something that's not obvious</td></tr></table></div>
+            <div onclick="OnClick('study')"><table><tr><td rowspan="2"><div class="red_table"><img src="assets/look-at.png" width="40px"></div></td><td class="cell-bold">Study</td></tr><tr><td class="cell-italic">Search for information</td></tr></table></div>
+            <div onclick="OnClick('utilize')"><table><tr><td rowspan="2"><div class="red_table"><img src="assets/monkey-wrench.png" width="40px"></div></td><td class="cell-bold">Utilize</td></tr><tr><td class="cell-italic">Use an object</td></tr></table></div>
+        </td></tr>
+        <tr><td>
+            <div onclick="OnClick('improvised-weapon')"><table><tr><td rowspan="2"><div class="red_table"><img src="assets/wok.png" width="40px"></div></td><td class="cell-bold">Improvised Weapon</td></tr><tr><td class="cell-italic">Attack with the environment</td></tr></table></div>
+            <div onclick="OnClick('unarmed-strike')"><table><tr><td rowspan="2"><div class="red_table"><img src="assets/fist.png" width="40px"></div></td><td class="cell-bold">Unarmed Strike</td></tr><tr><td class="cell-italic">Attack with a hand or foot</td></tr></table></div>
+        </td></tr></table>
+        </div></td></tr></table>
+    <br>
+
+    <table class="black_table"><tr><td><h1>Conditions</h1></td></tr>
+    <tr><td><div class="white_table" id="condition_table">
+        <div onclick="OnClick('badly-poisoned')"><table><tr><td rowspan="2"><div class="black_table"><img src="assets/poison-bottle.png" width="40px"></div></td><td class="cell-bold">Badly Poisoned</td></tr><tr><td class="cell-italic">You are badly poisoned</td></tr></table></div>
+        <div onclick="OnClick('blinded')"><table><tr><td rowspan="2"><div class="black_table"><img src="assets/sight-disabled.png" width="40px"></div></td><td class="cell-bold">Blinded</td></tr><tr><td class="cell-italic">You can't see</td></tr></table></div>
+        <div onclick="OnClick('burned')"><table><tr><td rowspan="2"><div class="black_table"><img src="assets/fire-silhouette.png" width="40px"></div></td><td class="cell-bold">Burned</td></tr><tr><td class="cell-italic">You have suffered burns</td></tr></table></div>
+        <div onclick="OnClick('charmed')"><table><tr><td rowspan="2"><div class="black_table"><img src="assets/smitten.png" width="40px"></div></td><td class="cell-bold">Charmed</td></tr><tr><td class="cell-italic">You are charmed</td></tr></table></div>
+        <div onclick="OnClick('deafened')"><table><tr><td rowspan="2"><div class="black_table"><img src="assets/hearing-disabled.png" width="40px"></div></td><td class="cell-bold">Deafened</td></tr><tr><td class="cell-italic">You can't hear</td></tr></table></div>
+        <div onclick="OnClick('dizzy')"><table><tr><td rowspan="2"><div class="black_table"><img src="assets/knockout.png" width="40px"></div></td><td class="cell-bold">Dizzy</td></tr><tr><td class="cell-italic">You are dizzy or lightheaded</td></tr></table></div>
+        <div onclick="OnClick('enlightened')"><table><tr><td rowspan="2"><div class="black_table"><img src="assets/light-bulb.png" width="40px"></div></td><td class="cell-bold">Enlightened</td></tr><tr><td class="cell-italic">You have had a stroke of luck</td></tr></table></div>
+        <div onclick="OnClick('exhaustion')"><table><tr><td rowspan="2"><div class="black_table"><img src="assets/back-pain.png" width="40px"></div></td><td class="cell-bold">Exhaustion</td></tr><tr><td class="cell-italic">You are exhausted</td></tr></table></div>
+        <div onclick="OnClick('forget')"><table><tr><td rowspan="2"><div class="black_table"><img src="assets/sleepy.png" width="40px"></div></td><td class="cell-bold">Forget</td></tr><tr><td class="cell-italic">You are suffering memory loss</td></tr></table></div>
+        <div onclick="OnClick('frightened')"><table><tr><td rowspan="2"><div class="black_table"><img src="assets/sharp-smile.png" width="40px"></div></td><td class="cell-bold">Frightened</td></tr><tr><td class="cell-italic">You are scared</td></tr></table></div>
+        <div onclick="OnClick('frozen')"><table><tr><td rowspan="2"><div class="black_table"><img src="assets/snowflake-2.png" width="40px"></div></td><td class="cell-bold">Freezing</td></tr><tr><td class="cell-italic">You are freezing cold</td></tr></table></div>
+        <div onclick="OnClick('grappled')"><table><tr><td rowspan="2"><div class="black_table"><img src="assets/grab.png" width="40px"></div></td><td class="cell-bold">Grappled</td></tr><tr><td class="cell-italic">You are being held</td></tr></table></div>
+        <div onclick="OnClick('haunted')"><table><tr><td rowspan="2"><div class="black_table"><img src="assets/sharp-smile.png" width="40px"></div></td><td class="cell-bold">Haunted</td></tr><tr><td class="cell-italic">You are being haunted or followed</td></tr></table></div>
+        <div onclick="OnClick('incapacitated')"><table><tr><td rowspan="2"><div class="black_table"><img src="assets/dead-head.png" width="40px"></div></td><td class="cell-bold">Incapacitated</td></tr><tr><td class="cell-italic">You can't take actions or reactions</td></tr></table></div>
+        <div onclick="OnClick('infested')"><table><tr><td rowspan="2"><div class="black_table"><img src="assets/mite.png" width="40px"></div></td><td class="cell-bold">Infested</td></tr><tr><td class="cell-italic">Parasites have swarmed over you</td></tr></table></div>
+        <div onclick="OnClick('invisible')"><table><tr><td rowspan="2"><div class="black_table"><img src="assets/aura.png" width="40px"></div></td><td class="cell-bold">Invisible</td></tr><tr><td class="cell-italic">You can't be seen</td></tr></table></div>
+        <div onclick="OnClick('paralyzed')"><table><tr><td rowspan="2"><div class="black_table"><img src="assets/internal-injury.png" width="40px"></div></td><td class="cell-bold">Paralyzed</td></tr><tr><td class="cell-italic">You are paralyzed</td></tr></table></div>
+        <div onclick="OnClick('petrified')"><table><tr><td rowspan="2"><div class="black_table"><img src="assets/stone-pile.png" width="40px"></div></td><td class="cell-bold">Petrified</td></tr><tr><td class="cell-italic">You are transformed into stone</td></tr></table></div>
+        <div onclick="OnClick('poisoned')"><table><tr><td rowspan="2"><div class="black_table"><img src="assets/poison-bottle.png" width="40px"></div></td><td class="cell-bold">Poisoned</td></tr><tr><td class="cell-italic">You are poisoned</td></tr></table></div>
+        <div onclick="OnClick('prone')"><table><tr><td rowspan="2"><div class="black_table"><img src="assets/back-pain.png" width="40px"></div></td><td class="cell-bold">Prone</td></tr><tr><td class="cell-italic">You're knocked over</td></tr></table></div>
+        <div onclick="OnClick('restrained')"><table><tr><td rowspan="2"><div class="black_table"><img src="assets/imprisoned.png" width="40px"></div></td><td class="cell-bold">Restrained</td></tr><tr><td class="cell-italic">You are restrained</td></tr></table></div>
+        <div onclick="OnClick('shocked')"><table><tr><td rowspan="2"><div class="black_table"><img src="assets/thunder-struck.png" width="40px"></div></td><td class="cell-bold">Shocked</td></tr><tr><td class="cell-italic">You are stunned by electricity</td></tr></table></div>
+        <div onclick="OnClick('stunned')"><table><tr><td rowspan="2"><div class="black_table"><img src="assets/internal-injury.png" width="40px"></div></td><td class="cell-bold">Stunned</td></tr><tr><td class="cell-italic">You are stunned</td></tr></table></div>
+        <div onclick="OnClick('unconscious')"><table><tr><td rowspan="2"><div class="black_table"><img src="assets/dead-head.png" width="40px"></div></td><td class="cell-bold">Unconscious</td></tr><tr><td class="cell-italic">You are knocked out</td></tr></table></div>
+        <div onclick="OnClick('wounded')"><table><tr><td rowspan="2"><div class="black_table"><img src="assets/pummeled.png" width="40px"></div></td><td class="cell-bold">Wounded</td></tr><tr><td class="cell-italic">You are bleeding uncontrollably</td></tr></table></div>
+    </div></td></tr></table>
+    <br>
+
+    <table class="blue_table"><tr><td><h1>Hazards</h1></td></tr>
+    <tr><td><div class="white_table" id="condition_table">
+        <div onclick="OnClick('burning')"><table><tr><td rowspan="2"><div class="blue_table"><img src="assets/fire-silhouette.png" width="40px"></div></td><td class="cell-bold">Burning</td></tr><tr><td class="cell-italic">You are on fire</td></tr></table></div>
+        <div onclick="OnClick('dehydration')"><table><tr><td rowspan="2"><div class="blue_table"><img src="assets/desert.png" width="40px"></div></td><td class="cell-bold">Dehydration</td></tr><tr><td class="cell-italic">You are starved of water</td></tr></table></div>
+        <div onclick="OnClick('falling')"><table><tr><td rowspan="2"><div class="blue_table"><img src="assets/falling.png" width="40px"></div></td><td class="cell-bold">Falling</td></tr><tr><td class="cell-italic">You are falling</td></tr></table></div>
+        <div onclick="OnClick('malnutrition')"><table><tr><td rowspan="2"><div class="blue_table"><img src="assets/apple-core.png" width="40px"></div></td><td class="cell-bold">Malnutrition</td></tr><tr><td class="cell-italic">You are starved of food</td></tr></table></div>
+        <div onclick="OnClick('suffocation')"><table><tr><td rowspan="2"><div class="blue_table"><img src="assets/drowning.png" width="40px"></div></td><td class="cell-bold">Suffocation</td></tr><tr><td class="cell-italic">You are unable to breath</td></tr></table></div>
+    </div></td></tr></table>
+    <br>
+
+    <table class="green_table"><tr><td><h1>Vision and Cover</h1></td></tr>
+    <tr><td><div class="white_table" id="cover_table">
+        <table><tr><td>
+            <div onclick="OnClick('half-cover')"><table><tr><td rowspan="2"><div class="green_table"><img src="assets/armor-downgrade.png" width="40px"></div></td><td class="cell-bold">Half Cover</td></tr><tr><td class="cell-italic">+2 to defenses</td></tr></table></div>
+            <div onclick="OnClick('three-quarters-cover')"><table><tr><td rowspan="2"><div class="green_table"><img src="assets/armor-upgrade.png" width="40px"></div></td><td class="cell-bold">Three-Quarters Cover</td></tr><tr><td class="cell-italic">+5 to defenses</td></tr></table></div>
+            <div onclick="OnClick('total-cover')"><table><tr><td rowspan="2"><div class="green_table"><img src="assets/shield-reflect.png" width="40px"></div></td><td class="cell-bold">Total Cover</td></tr><tr><td class="cell-italic">Can't be targeted</td></tr></table></div>
+        </td></tr><tr><td>
+            <div onclick="OnClick('bright-light')"><table><tr><td rowspan="2"><div class="green_table"><img src="assets/sun.png" width="40px"></div></td><td class="cell-bold">Bright Light</td></tr><tr><td class="cell-italic">Normal lighting</td></tr></table></div>
+            <div onclick="OnClick('dim-light')"><table><tr><td rowspan="2"><div class="green_table"><img src="assets/semi-closed-eye.png" width="40px"></div></td><td class="cell-bold">Dim Light</td></tr><tr><td class="cell-italic">Moonlight</td></tr></table></div>
+            <div onclick="OnClick('darkness')"><table><tr><td rowspan="2"><div class="green_table"><img src="assets/sight-disabled.png" width="40px"></div></td><td class="cell-bold">Darkness</td></tr><tr><td class="cell-italic">Total darkness</td></tr></table></div>
+        </td></tr><tr><td>
+            <div onclick="OnClick('lightly-obscured')"><table><tr><td rowspan="2"><div class="green_table"><img src="assets/semi-closed-eye.png" width="40px"></div></td><td class="cell-bold">Lightly Obscured</td></tr><tr><td class="cell-italic">Disadvantage on perception</td></tr></table></div>
+            <div onclick="OnClick('heavily-obscured')"><table><tr><td rowspan="2"><div class="green_table"><img src="assets/sight-disabled.png" width="40px"></div></td><td class="cell-bold">Heavily Obscured</td></tr><tr><td class="cell-italic">Effectively blind</td></tr></table></div>
+        </td></tr><tr><td>
+            <div onclick="OnClick('darkvision')"><table><tr><td rowspan="2"><div class="green_table"><img src="assets/semi-closed-eye.png" width="40px"></div></td><td class="cell-bold">Darkvision</td></tr><tr><td class="cell-italic">Can see through darkness</td></tr></table></div>
+            <div onclick="OnClick('blindsight')"><table><tr><td rowspan="2"><div class="green_table"><img src="assets/blindfold.png" width="40px"></div></td><td class="cell-bold">Blindisght</td></tr><tr><td class="cell-italic">Can see despite being blind</td></tr></table></div>
+            <div onclick="OnClick('truesight')"><table><tr><td rowspan="2"><div class="green_table"><img src="assets/eye-target.png" width="40px"></div></td><td class="cell-bold">Truesight</td></tr><tr><td class="cell-italic">Can see through everything</td></tr></table></div>
+            <div onclick="OnClick('tremorsense')"><table><tr><td rowspan="2"><div class="green_table"><img src="assets/earth-spit.png" width="40px"></div></td><td class="cell-bold">Tremorsense</td></tr><tr><td class="cell-italic">Can sense through vibrations</td></tr></table></div>
+        </td></tr></table>
+    </div></td></tr></table>
+    <br>
+
+    <table class="blue_table"><tr><td><h1>Terrain</h1></td></tr>
+    <tr><td><div class="white_table" id="combat_table">
+        <div onclick="OnClick('difficult-terrain')"><table><tr><td rowspan="2"><div class="blue_table"><img src="assets/earth-spit.png" width="40px"></div></td><td class="cell-bold">Difficult Terrain</td></tr><tr><td class="cell-italic">Slows movement speed</td></tr></table></div>
+        <div onclick="OnClick('underwater-combat')"><table><tr><td rowspan="2"><div class="blue_table"><img src="assets/drowning.png" width="40px"></div></td><td class="cell-bold">Underwater Combat</td></tr><tr><td class="cell-italic">Swimming while fighting</td></tr></table></div>
+    </div></td></tr></table>
+    <br>
+
+    <table class="blue_table"><tr><td><h1>Travel Pace</h1></td></tr>
+    <tr><td><div class="white_table" id="travel_table">
+        <div onclick="OnClick('fast-travel')"><table><tr><td rowspan="2"><div class="blue_table"><img src="assets/sprint.png" width="40px"></div></td><td class="cell-bold">Fast Pace</td></tr><tr><td class="cell-italic">Disadvantage on some checks</td></tr></table></div>
+        <div onclick="OnClick('normal-travel')"><table><tr><td rowspan="2"><div class="blue_table"><img src="assets/journey.png" width="40px"></div></td><td class="cell-bold">Normal Pace</td></tr><tr><td class="cell-italic">Disadvantage on dexterity</td></tr></table></div>
+        <div onclick="OnClick('slow-travel')"><table><tr><td rowspan="2"><div class="blue_table"><img src="assets/run.png" width="40px"></div></td><td class="cell-bold">Slow Pace</td></tr><tr><td class="cell-italic">Advantage on wisdom</td></tr></table></div>
+    </div></td></tr></table>
+
+    <div class="overlay" id="overlay"></div>
+</body>

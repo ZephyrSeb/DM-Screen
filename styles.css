@@ -1,0 +1,88 @@
+.red_table {
+    background-color: darkred;
+    border-radius: 10px;
+    padding: 5px;
+    scrollbar-width: none;
+    overflow-y: scroll;
+}
+
+.black_table {
+    background-color: black;
+    border-radius: 10px;
+    padding: 5px;
+    scrollbar-width: none;
+    overflow-y: scroll;
+}
+
+.blue_table {
+    background-color: darkblue;
+    border-radius: 10px;
+    padding: 5px;
+    scrollbar-width: none;
+    overflow-y: scroll;
+}
+
+.white_table {
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    scrollbar-width: none;
+    overflow-y: scroll;
+}
+
+.green_table {
+    background-color: darkgreen;
+    border-radius: 10px;
+    padding: 5px;
+    scrollbar-width: none;
+    overflow-y: scroll;
+}
+
+h1 {
+    color: white;
+    font-size: 20px;
+    font-family: Verdana;
+}
+
+div {
+    display: inline-block;
+    font-family: Verdana;
+}
+
+.cell-bold {
+    width: 300px;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+.cell-italic {
+    width: 300px;
+    font-family: Verdana;
+    font-style: italic;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-left: 25%;
+    position: fixed;
+    top: 40px;
+    max-height: 90vh;
+    z-index: 1;
+    scrollbar-width: none;
+    overflow-y: scroll;
+}
+
+p {
+    padding: 0px;
+    margin: 2px;
+    text-indent: 10px;
+}
+
+.striped {
+    border-style: hidden;
+    tr:nth-child(even) {
+        background-color: lightgray;
+    }
+}
